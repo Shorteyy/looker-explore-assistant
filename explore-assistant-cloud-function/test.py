@@ -23,7 +23,7 @@ def send_request(url, data, signature):
 
 def main():
     # URL of the endpoint
-    url = 'http://localhost:8000'
+    url = 'https://us-central1-explore-assistant-434512.cloudfunctions.net/explore-assistant-api'
 
     # Request payload
     data = {"contents":"how are you doing?", "parameters":{"max_output_tokens": 1000}}
