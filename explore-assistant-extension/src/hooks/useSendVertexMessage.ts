@@ -77,8 +77,8 @@ const useSendVertexMessage = () => {
 
   // bigquery
   const VERTEX_BIGQUERY_LOOKER_CONNECTION_NAME =
-    process.env.VERTEX_BIGQUERY_LOOKER_CONNECTION_NAME || ''
-  const VERTEX_BIGQUERY_MODEL_ID = process.env.VERTEX_BIGQUERY_MODEL_ID || ''
+    process.env.VERTEX_BIGQUERY_LOOKER_CONNECTION_NAME || 'explore_assistant'
+  const VERTEX_BIGQUERY_MODEL_ID = process.env.VERTEX_BIGQUERY_MODEL_ID || 'explore-assistant-434512.explore_assistant.explore_assistant_examples'
 
   const { core40SDK } = useContext(ExtensionContext)
   const { settings, examples, currentExplore} =
